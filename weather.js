@@ -1,6 +1,6 @@
 
 /* create a weather api  */
-const apiKey = "";
+const apikey = "";
 const apiurl = "";
 
 const searchBar = document.querySelector(".search-bar");
