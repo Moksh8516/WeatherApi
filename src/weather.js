@@ -1,20 +1,11 @@
 
-/* create a weather api  */
-const apikey = "";
-const apiurl = "";
 
 const searchBar = document.querySelector(".search-bar");
 const searchBtn = document.querySelector(".btn");
 const weatherReportImg = document.querySelector(".weather-report");
-
 async function checkweather(city) {
-    const response = await fetch(apiurl + city + `&appid=${apikey}`);
-
-    // try {
-    //     data.weater[0].main;
-    // } catch (error) {
-    //     console.log(error);
-    // }
+    const response = await fetch(`http://localhost:5000/api/weather?city=${city}`);
+    // console.log(response)
 
     if (response.status == 404) {
         document.querySelector(".error p").style.display = "block";
@@ -51,7 +42,7 @@ async function checkweather(city) {
         document.querySelector(".weather_details").style.display = "block";
         document.querySelector(".error p").style.display = "none";
 
-        console.log(data);
+        // console.log(data);
     }
 
 }

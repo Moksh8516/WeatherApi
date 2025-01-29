@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
-    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="/src/weather.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    
+
 </head>
+
 <body>
-<div class="weather">
-    <div class="search">
-        <input type="text" class="search-bar" placeholder="Enter your city name" spellcheck="false">
-        <button class="btn" title="searchBtn"><img src="images/search.png"></button>
-    </div>
+    <div class="weather">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Enter your city name" spellcheck="false">
+            <button class="btn" title="searchBtn"><img src="images/search.png"></button>
+        </div>
 
-    <div class="error">
-        <p>Invalid city name</p>
-    </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
 
-<div class="weather_details">
-    <div class='weather-img'>
-        <img src="images/clouds.png" class="weather-report">
-    </div>
+        <div class="weather_details">
+            <div class='weather-img'>
+                <img src="images/clouds.png" class="weather-report">
+            </div>
 
-    <div class="weather-temp">
-        <h1 class="temp">27°C</h1>
-        <p class="description">Description</p>
-        <h2 class="city-name">New Delhi</h2>
-    </div>
+            <div class="weather-temp">
+                <h1 class="temp">27°C</h1>
+                <p class="description">Description</p>
+                <h2 class="city-name">New Delhi</h2>
+            </div>
 
- <div class="details">
-    <div>
-         <img src="images/humidity.png"  class="humidity-img">
-         <div class="humidity-cont">
-         <p class="humidity">50%</p>
-         <p >Humidity</p>
-         </div>
+            <div class="details">
+                <div>
+                    <img src="images/humidity.png" class="humidity-img">
+                    <div class="humidity-cont">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/wind.png" class="wind-img">
+                    <div class="wind-cont">
+                        <p class="wind">15km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="images/wind.png" class="wind-img">
-        <div class="wind-cont">
-        <p class="wind">15km/h</p>
-        <p >Wind speed</p>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
-   <script src="weather.js"></script> 
+    <script src="/src/weather.js"></script>
 </body>
+
 </html>
