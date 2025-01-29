@@ -30,4 +30,4 @@ app.get("/api/weather", async (req, res) => {
 });
 
 // Start server on port 5000
-app.listen(5000, () => console.log("Server running on https://moksh-weatherapi.netlify.app:5000"));
+app.listen(5000, () => console.log("Server running on http://localhost:5000"));

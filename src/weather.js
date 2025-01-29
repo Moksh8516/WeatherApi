@@ -4,7 +4,7 @@ const searchBar = document.querySelector(".search-bar");
 const searchBtn = document.querySelector(".btn");
 const weatherReportImg = document.querySelector(".weather-report");
 async function checkweather(city) {
-    const response = await fetch(`https://moksh-weatherapi.netlify.app/api/weather?city=${city}`);
+    const response = await fetch(`http://localhost:5000/api/weather?city=${city}`);
     // console.log(response)
 
     if (response.status == 404) {
