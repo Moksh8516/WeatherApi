@@ -10,3 +10,4 @@ Start the server by running:
 `npm run server`
 
 Once the server is running, it will be accessible at https://moksh-weatherapi.netlify.app (replace PORT with the actual port number).
+
